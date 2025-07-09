@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <a href="#" class="sidebar-home" data-tab="home">
+          <span class="ri-home-line">Home</span>
+        </a>
+        <div class="sideber-menu">
+          <ul>
+            <li class="sidebar-menu-item tab-item" data-tab="converter">
+              <span class="ri-scales-3-line">Unit Converter</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <section id="home">
+        <header>
+          <div class="profile-icon"> <span class="ri-user-smile-line"></span>
+          </div>
+          <h1 class="main-title">Welcome to Your Personal Dashboard</h1>
+          <h2 class="main-subtitle">Make your daily life more convenient and enjoyable</h2>
+        </header>
+        <div class="message">
+          <p>This dashboard is a tool to enrich your daily life. You can easily use essential features such as diary
+            entries, memo management, and checking weather information.</p>
+          <p>Small daily records become irreplaceable memories, and efficient task management leads to fulfilling days.
+            Please use this as a partner that supports your everyday life.</p>
+        </div>
+      </section>
+      <section class="section-title hidden content-section" id="converter">
+        <header class="section-header">Length Unit Conversion</header>
+        <div class="section-body">
+          <div class="converter-card">
+            <form action="" class="converter-form">
+              <div class="form-group">
+                <label for="converterInput" class="form-label">Value</label>
+                <input type="number" id="converterInput" class="converter-input form-input" value="1000">
+              </div>
+
+              <div class="form-group form-row">
+                <div>
+                  <label for="converterFrom" class="form-label">From</label>
+                  <select id="converterFrom" class="converter-from form-input" name=""></select>
+                </div>
+                <div>
+                  <label for="converterTo" class="form-label">To</label>
+                  <select id="converterTo" class="converter-to form-input" name=""></select>
+                </div>
+              </div>
+
+              <div class="converter-result-container">
+                <div class="converter-result"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="main.js"></script>
+  </div>
+</body>
+
+</html>
